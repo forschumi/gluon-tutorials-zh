@@ -127,7 +127,7 @@ to PATH in your /home/ubuntu/.bashrc ? [yes|no]
 [no] >>> yes
 ```
 
-安装完成后，运行一次`bash`让CUDA和conda生效。接下来，下载本书代码、安装并激活conda环境
+安装完成后，运行一次`source ~/.bashrc`让CUDA和conda生效。接下来，下载本书代码、安装并激活conda环境
 
 ```
 mkdir gluon_tutorials_zh && cd gluon_tutorials_zh
@@ -137,11 +137,11 @@ conda env create -f environment.yml
 source activate gluon
 ```
 
-默认环境里安装了CPU版本的MXNet。现在我们将它替换成GPU版本的MXNet（1.2.0版）。
+默认环境里安装了CPU版本的MXNet。现在我们将它替换成GPU版本的MXNet（1.2.1 版）。
 
 ```
 pip uninstall mxnet
-pip install mxnet-cu80==1.2.0
+pip install mxnet-cu80==1.2.1
 ```
 
 ## 运行Jupyter notebook
